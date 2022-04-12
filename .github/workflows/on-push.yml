@@ -5,5 +5,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - uses: ./.github/actions/build-image
       - run: echo "🍏 This job's status is ${{ job.status }}."
