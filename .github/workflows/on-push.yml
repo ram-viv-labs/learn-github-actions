@@ -10,5 +10,5 @@ jobs:
       - name: Run Build Image Action
         uses: ./.github/actions/build-image
         with:
-          aws_region: us-west-2
+          aws_region: us-east-2
       - run: echo "🍏 This job's status is ${{ job.status }}."
