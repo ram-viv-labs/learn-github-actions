@@ -1,0 +1,8 @@
+name: Read File
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        echo "Attempting to read the file created in the last action"
+        cat test

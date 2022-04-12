@@ -10,3 +10,4 @@ runs:
     - shell: bash
       run: |
         echo "Hello world from inside the action for region ${{ inputs.aws_region }}"
+        echo "This file is created" > test

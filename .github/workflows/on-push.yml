@@ -11,4 +11,6 @@ jobs:
         uses: ./.github/actions/build-image
         with:
           aws_region: us-east-2
+      - name: Read file
+        uses: ./.github/actions/read-file
       - run: echo "🍏 This job's status is ${{ job.status }}."
