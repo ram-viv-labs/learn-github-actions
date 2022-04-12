@@ -9,4 +9,4 @@ runs:
   steps:
     - shell: bash
       run: |
-        echo "Hello world from inside the action"
+        echo "Hello world from inside the action for region ${{ inputs.aws_region }}"
