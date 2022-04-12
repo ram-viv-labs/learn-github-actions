@@ -1,5 +1,0 @@
-name: Build Image
-inputs:
-  aws_region:
-    required: true
-    default: us-west-2

@@ -1,0 +1,12 @@
+name: Build Image
+inputs:
+  aws_region:
+    required: true
+    default: us-west-2
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        echo "Hello world from inside the action"
